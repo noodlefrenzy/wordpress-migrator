@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,20 +24,27 @@ namespace MigrateWordpressExport
 
         private BlogPost Convert(XElement postXml)
         {
-            var title = this.TitleBlockOverrides ?? new TitleBlock();
-            title.Title = (string)postXml.Descendants("title").First();
-            title.PublicationDate = DateTime.Parse((string)postXml.Descendants("pubDate").First());
-            title.Categories = postXml.Descendants("category").Select(x => (string)x).ToArray();
-            // Now for the override-able fields
-            if (title.Author == null)
-                title.Author = (string)postXml.Descendants(DCNamespace + "creator").First();
+            try
+            {
+                var title = this.TitleBlockOverrides ?? new TitleBlock();
+                title.Title = (string)postXml.Descendants("title").First();
+                title.PublicationDate = DateTime.Parse((string)postXml.Descendants("pubDate").First());
+                title.Categories = postXml.Descendants("category").Select(x => (string)x).ToArray();
+                // Now for the override-able fields
+                if (title.Author == null)
+                    title.Author = (string)postXml.Descendants(DCNamespace + "creator").First();
 
-            var post = new BlogPost();
-            post.TitleBlock = title;
-            post.Contents = (string)postXml.Descendants(ContentNamespace + "encoded").First();
-            post.FriendlyName = (string)postXml.Descendants(WPNamespace + "post_name").First();
+                var post = new BlogPost();
+                post.TitleBlock = title;
+                post.Contents = (string)postXml.Descendants(ContentNamespace + "encoded").First();
+                post.FriendlyName = (string)postXml.Descendants(WPNamespace + "post_name").First();
 
-            return post;
+                return post;
+            } catch (Exception e)
+            {
+                Trace.TraceError("Error converting {0}\n\n{1}", postXml, e);
+                throw;
+            }
         }
     }
 }

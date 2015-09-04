@@ -4,3 +4,9 @@ E:\dev\git_ws\net_modules\wordpress-migrator\MigrateWordpressExport\bin\Debug\Mi
 E:\dev\git_ws\net_modules\wordpress-migrator\MigrateWordpressExport\obj\Debug\MigrateWordpressExport.csprojResolveAssemblyReference.cache
 E:\dev\git_ws\net_modules\wordpress-migrator\MigrateWordpressExport\obj\Debug\MigrateWordpressExport.exe
 E:\dev\git_ws\net_modules\wordpress-migrator\MigrateWordpressExport\obj\Debug\MigrateWordpressExport.pdb
+E:\dev\git_ws\wordpress-migrator\MigrateWordpressExport\bin\Debug\MigrateWordpressExport.exe.config
+E:\dev\git_ws\wordpress-migrator\MigrateWordpressExport\obj\Debug\MigrateWordpressExport.exe
+E:\dev\git_ws\wordpress-migrator\MigrateWordpressExport\obj\Debug\MigrateWordpressExport.pdb
+E:\dev\git_ws\wordpress-migrator\MigrateWordpressExport\bin\Debug\MigrateWordpressExport.exe
+E:\dev\git_ws\wordpress-migrator\MigrateWordpressExport\bin\Debug\MigrateWordpressExport.pdb
+E:\dev\git_ws\wordpress-migrator\MigrateWordpressExport\obj\Debug\MigrateWordpressExport.csprojResolveAssemblyReference.cache

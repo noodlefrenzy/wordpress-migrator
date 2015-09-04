@@ -35,6 +35,10 @@ namespace MigrateWordpressExport
                             result.AppendFormat("![{0}]({1})", elt.Attribute("alt").Value, elt.Attribute("src").Value);
                             break;
 
+                        case "code":
+                            result.AppendFormat("`{0}`", (string)elt);
+                            break;
+
                         default:
                             Trace.TraceWarning("Unrecognized sub-element {0}: {1}", elt.Name, elt);
                             result.Append((string)elt);
@@ -53,7 +57,7 @@ namespace MigrateWordpressExport
                 throw new ArgumentException("Missing title/converter/post");
             }
 
-            var doc = XDocument.Parse("<body>" + post.Contents + "</body>");
+            var doc = XDocument.Parse("<body>" + post.Contents.Replace("&nbsp;","") + "</body>");
             var result = new StringBuilder();
             result.AppendLine(this.TitleBlockConverter(post.TitleBlock));
 

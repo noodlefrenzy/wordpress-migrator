@@ -9,3 +9,14 @@ E:\dev\git_ws\net_modules\wordpress-migrator\MigrateWordpressExport.Tests\obj\De
 E:\dev\git_ws\net_modules\wordpress-migrator\MigrateWordpressExport.Tests\obj\Debug\MigrateWordpressExport.Tests.csproj.GenerateResource.Cache
 E:\dev\git_ws\net_modules\wordpress-migrator\MigrateWordpressExport.Tests\obj\Debug\MigrateWordpressExport.Tests.dll
 E:\dev\git_ws\net_modules\wordpress-migrator\MigrateWordpressExport.Tests\obj\Debug\MigrateWordpressExport.Tests.pdb
+E:\dev\git_ws\wordpress-migrator\MigrateWordpressExport.Tests\bin\Debug\MigrateWordpressExport.Tests.dll
+E:\dev\git_ws\wordpress-migrator\MigrateWordpressExport.Tests\bin\Debug\MigrateWordpressExport.Tests.pdb
+E:\dev\git_ws\wordpress-migrator\MigrateWordpressExport.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\dev\git_ws\wordpress-migrator\MigrateWordpressExport.Tests\bin\Debug\MigrateWordpressExport.exe
+E:\dev\git_ws\wordpress-migrator\MigrateWordpressExport.Tests\bin\Debug\MigrateWordpressExport.pdb
+E:\dev\git_ws\wordpress-migrator\MigrateWordpressExport.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+E:\dev\git_ws\wordpress-migrator\MigrateWordpressExport.Tests\obj\Debug\MigrateWordpressExport.Tests.csprojResolveAssemblyReference.cache
+E:\dev\git_ws\wordpress-migrator\MigrateWordpressExport.Tests\obj\Debug\MigrateWordpressExport.Tests.Properties.Resources.resources
+E:\dev\git_ws\wordpress-migrator\MigrateWordpressExport.Tests\obj\Debug\MigrateWordpressExport.Tests.csproj.GenerateResource.Cache
+E:\dev\git_ws\wordpress-migrator\MigrateWordpressExport.Tests\obj\Debug\MigrateWordpressExport.Tests.dll
+E:\dev\git_ws\wordpress-migrator\MigrateWordpressExport.Tests\obj\Debug\MigrateWordpressExport.Tests.pdb
